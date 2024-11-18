@@ -7,6 +7,11 @@
     ))
 ;(global-set-key [24 112] (lambda () "prev-window" (interactive) (other-window -1)))
 ;(global-set-key (kbd "C-x p")  (other-window -1))
+
+; The following fixes the unreadable dark blue if you have a dark terminal background
+; important to me for running emacs on headless machines
+(setq frame-background-mode 'dark)
+
 ;; ;;; This was installed by package-install.el.
 ;; ;;; This provides support for the package system and
 ;; ;;; interfacing with ELPA, the package archive.
